@@ -1,0 +1,46 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background: orange;
+    height: 56px;
+}
+
+.toolbar__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.toolbar_logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.toolbar__navigation {
+    color: white;
+    text-decoration: none;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar__navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar__navigation li {
+    padding: 0 0.5rem;
+}
+
+.toolbar__navigation a:hover,
+.toolbar__navigation a:active {
+    color: pink;
+}
