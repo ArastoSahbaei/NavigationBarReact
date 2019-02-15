@@ -39,3 +39,9 @@
     color: hotpink;
     
 }
+
+@media (min-width: 769) {
+    .side-drawer {
+        display: none;
+    }
+}

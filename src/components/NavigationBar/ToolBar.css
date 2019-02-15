@@ -48,3 +48,18 @@
 .toolbar__navigation a:active {
     color: pink;
 }
+
+@media (max-width: 768px) {
+    .toolbar_navigation-items {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .toolbar__toggle-button {
+        display: none;
+    }
+    .toolbar__logo {
+        margin-left: 0;
+    }
+}
