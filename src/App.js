@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop'
-import sideDrawer from './components/SideDrawer/SideDrawer';
+import Home from './components/Home/Home'
+import Law from './components/Law/Law'
 
 class App extends Component {
 
@@ -29,12 +31,25 @@ backDropClickHandler = () => {
     }
 
     return (
+
+      
+
       <div style={{height: '100%'}}>
+
+<BrowserRouter>
+        <div className="App">
+            <NavigationBar />
+                <Route exact path = '/'     component={Home} />
+                <Route       path = '/law'  component={Law}  />
+        </div>
+      </BrowserRouter>
+
+
         <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <main style={{marginTop: '64px'}}> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, esse?</p>
+        <Home />
         </main>
       </div>
     )
