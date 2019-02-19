@@ -36,16 +36,15 @@ backDropClickHandler = () => {
 
       <div style={{height: '100%'}}>
 
+
 <BrowserRouter>
         <div className="App">
-            <NavigationBar />
+        <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
                 <Route exact path = '/'     component={Home} />
                 <Route       path = '/law'  component={Law}  />
         </div>
       </BrowserRouter>
 
-
-        <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <main style={{marginTop: '64px'}}> 
