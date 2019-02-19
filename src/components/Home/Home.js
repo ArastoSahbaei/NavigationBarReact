@@ -22,6 +22,7 @@ class Home extends Component {
             data.map(post => {
                             return(
                             <div className="post card" key={data.id}>
+                            <h1>LOL</h1>
                             <div className="card-content">
                             <span className="card-title">{post.title}</span>
                             <p>{post.body}</p>
