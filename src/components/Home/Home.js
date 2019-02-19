@@ -21,20 +21,22 @@ class Home extends Component {
         const cryptoList = data.length ? (
             data.map(post => {
                             return(
-                            <div className="post card" key={data.id}>
-                            <h1>LOL</h1>
-                            <div className="card-content">
-                            <span className="card-title">{post.title}</span>
-                            <p>{post.body}</p>
-                            </div>
-                          </div>
+                                <div>
+                                    <div key = {data.id}     />
+                                    <h3>       {post.title} </h3>
+                                    <p>        {post.body}  </p>
+                                </div>
+                          
                     )
                     })) 
-                         : (<div className="center">NO POSTS YET?</div>)
+                         : (<div>NO POSTS YET?</div>)
    
             return(
                 <div className="container">
-                    <h4 className="center">Home</h4>
+                <br />
+                <br />
+                <br />
+                    <h1>This is the part</h1>
                     {cryptoList}
                  </div>
                   )

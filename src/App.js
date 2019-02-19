@@ -41,7 +41,7 @@ backDropClickHandler = () => {
         <div className="App">
         <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
             <switch>
-            <Route exact path = '/home'     component={Home} />
+            <Route exact path = '/'     component={Home} />
                 <Route       path = '/law'  component={Law}  />
             </switch>
         </div>
